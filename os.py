@@ -1,5 +1,5 @@
 # This was annoying to make  i dont know why i made this
-#!/ust/bin/env python
+#!/usr/bin/env python
 print ("Check out the #README in the dir you cloned this into for all the avalible options and distros \n")
 import subprocess
 call = subprocess.call
@@ -30,7 +30,8 @@ elif fetch == 'nixos':
     call('neofetch --ascii_distro nixos', shell=True)
 elif fetch == 'nixos small':
     call('neofetch --ascii_distro nixos_small', shell=True)
-
+elif fetch == 'suse':
+    call('neofetch --ascii_distro opensuse', shell=True)
 else:
     call('exit', shell=True)
     print ("Wrong command. Rerun the script.")

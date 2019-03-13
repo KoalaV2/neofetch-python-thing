@@ -32,6 +32,24 @@ elif fetch == 'nixos small':
     call('neofetch --ascii_distro nixos_small', shell=True)
 elif fetch == 'suse':
     call('neofetch --ascii_distro opensuse', shell=True)
+elif fetch == 'kali':
+    call('neofetch --ascii_distro kali', shell=True)
+elif fetch == 'kali rainbow':
+    call('neofetch --ascii_distro kali | lolcat', shell=True)
+elif fetch == 'void':
+    call('neofetch --ascii_distro void', shell=True)
+elif fetch == 'void small':
+    call('neofetch --ascii_distro void_small', shell=True)
+elif fetch == 'void small rainbow':
+    call('neofetch --ascii_distro void_small | lolcat', shell=True)
+elif fetch == 'void rainbow':
+    call('neofetch --ascii_distro void | lolcat', shell=True)
+elif fetch == 'bedrock':
+    call('neofetch --ascii_distro bedrock', shell=True)
+elif fetch == 'bedrock rainbow':
+    call('neofetch --ascii_distro bedrock | lolcat', shell=True)
+elif fetch == 'slackware':
+    call('neofetch --ascii_distro slackware', shell=True)
 else:
     call('exit', shell=True)
     print ("Wrong command. Rerun the script.")
